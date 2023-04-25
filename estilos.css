@@ -1,142 +1,320 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.section-header{
-    background: #1c1c1c;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    overflow: hidden;
+.section-header {
+  background: #1c1c1c;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  overflow: hidden;
+}
+.section-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 4px;
+}
+.section-header header .logo a {
+  display: flex;
+  font-size: 35px;
+  color: beige;
+  text-decoration: none;
+}
+.section-header header nav ul {
+  display: flex;
+  list-style: none;
+}
+.section-header header nav ul li {
+  text-align: none;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+}
+.section-header header nav ul li a {
+  color: beige;
+  text-decoration: none;
+}
+.section-header header nav ul li:hover {
+  background-color: rgb(6, 141, 51);
+  border-radius: 5px;
+}
+.section-header header nav ul #actual {
+  background-color: rgb(2, 77, 27);
+  border-radius: 5px;
+}
+.section-header header nav ul #actual:hover {
+  background-color: rgb(6, 141, 51);
 }
 
-.section-header header{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 4px;
+.nav-responsive {
+  background-color: aqua;
+  color: beige;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
 }
 
-.section-header header .logo a{
-    display: flex;
-    font-size: 35px;
-    color: beige;
-    text-decoration: none;
-}
-
-.section-header header ul{
-    display: flex;
-    list-style: none;
-}
-
-.section-header header nav ul li a{
-    text-align: none;
-    color: beige;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none
-}
-
-.section-header header nav ul li a:hover{
-    background-color: rgb(6, 141, 51);
-    border-radius: 5px;
-
-}
-
-.nav-responsive{
-    background-color: aqua;
-    color: beige;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-}
 /* imagen BANNER */
-
-.section-banner{
-    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url("img/fondo.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    width: 100%;
+.section-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/fondo.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+.section-banner .container-banner {
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-banner .container-banner .nombre {
+  font-size: 40px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.section-banner .container-banner .especialidad {
+  font-size: 20px;
+  text-align: center;
+}
+.section-banner .container-banner .redes a {
+  display: inline-block;
+  padding: 0 2px;
+  color: beige;
 }
 
-.section-banner .container-banner{
-    max-width: 1100px;
-    height: 100vh;
-    margin: auto;
-    color: beige;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+h1 {
+  text-align: center;
+  color: beige;
+  text-shadow: 0 0 5px #000;
+  text-transform: capitalize;
+  font-family: "Tilt Neon", cursive;
+  font-size: 40px;
+  padding: 15px;
 }
 
-.section-banner .container-banner .nombre{
-    font-size: 40px;
-    margin-bottom: 5px;
-    letter-spacing: 2px;
-    text-align: center;
+h3 {
+  text-align: center;
+  background-color: rgb(117, 94, 43);
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  text-transform: capitalize;
+  font-family: "Tilt Neon", cursive;
+  font-size: 40px;
+  padding: 15px;
 }
 
-.section-banner .container-banner .especialidad{
-    font-size: 20px;
-    text-align: center;
-    
+body {
+  background-color: red;
 }
 
-h1{
-    text-align: center;
-    color: beige;
-    text-shadow: 0 0 5px #000;
-    text-transform: capitalize;
-    font-family: 'Tilt Neon', cursive;
-    font-size: 40px;
-    padding: 15px;
+img {
+  width: 100%;
+  height: 250px;
 }
 
-h3{
-    text-align: center;
-    background-color: rgb(117, 94, 43);
-    color: #fff;
-    text-shadow: 0 0 5px #000;
-    text-transform: capitalize;
-    font-family: 'Tilt Neon', cursive;
-    font-size: 40px;
-    padding: 15px;
+.imagen {
+  background-color: #333;
+  border: 2px solid #000;
+  background-size: cover;
+  background-position: center;
 }
 
-body{
-    background-color: red;
+.imagen:hover {
+  transform: scale(1.05);
+  transition: all 0.9s;
 }
 
-
-img{
-    width: 100%;
-    height: 250px;
+.container-fluid {
+  background-color: black;
 }
 
-.imagen{
-    background-color: #333;
-    border: 2px solid #000;
-    background-size: cover;
-    background-position: center;
-    
+.section-sobremi {
+  background-color: #1c1c1c;
+  margin: auto;
+  padding: 50px 50px;
+  color: #1c1c1c;
+  display: flex;
+}
+.section-sobremi .fotoperfil {
+  max-width: 200px;
+  margin-right: 30px;
+}
+.section-sobremi .fotoperfil img {
+  width: 150px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: beige;
+  border: 5px #320000 dotted;
+}
+.section-sobremi .sobremi {
+  margin: 0 10px;
+  text-align: center;
+  justify-content: center;
+}
+.section-sobremi .sobremi .titulosobremi {
+  font-size: 35px;
+  color: beige;
+  text-decoration: line-through;
+  text-decoration-color: beige;
+  text-decoration-thickness: 1px;
+}
+.section-sobremi .sobremi p {
+  font-size: 25px;
+  color: beige;
+}
+.section-sobremi .sobremi p span {
+  color: aqua;
 }
 
-.imagen:hover{
-
-    transform: scale(1.05);
-    transition: all 0.9s;
-
+.section-gustos {
+  background-color: #292828;
+  margin: auto;
+  padding: 50px 50px;
+  color: #1c1c1c;
+  display: flex;
 }
-.container-fluid{
-    background-color: black;
+.section-gustos .gusto {
+  max-width: 200px;
+  margin-right: 30px;
 }
+.section-gustos .gusto img {
+  width: 150px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: rgb(118, 118, 66);
+  border: 5px #971515 dotted;
+}
+.section-gustos .parrafo-exp {
+  margin: 0 10px;
+  text-align: center;
+  justify-content: center;
+}
+.section-gustos .parrafo-exp p {
+  font-size: 20px;
+  color: beige;
+}
+
+.titulo-viajes .tituloviajes {
+  text-align: center;
+  color: beige;
+  background-color: #1c1c1c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 25px;
+}
+
+.container-form form {
+  background: #535050;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 60px;
+  box-shadow: 2px 2px 2px green;
+}
+.container-form form .titulo-form .titulo {
+  font-size: 30px;
+  color: beige;
+  text-align: center;
+}
+.container-form form .form-label {
+  display: block;
+  color: beige;
+  font-size: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+.container-form form .form-input,
+.container-form form .form-textarea {
+  background: #cbbbbb;
+  border-bottom: 5px solid #000000;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+.container-form form .btn-submit {
+  width: 25%;
+  background: #3d3a3a;
+  color: beige;
+  border-radius: 20px;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #000000;
+}
+.container-form form .btn-submit:hover {
+  color: greenyellow;
+  background: #645c5c;
+}
+
+.titulo-proyectos {
+  background-color: #1c1c1c;
+  color: beige;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.container-tarjeta {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  background-color: #1c1c1c;
+}
+.container-tarjeta .tarjeta {
+  max-width: 700px;
+  margin: 20px;
+  border-radius: 10px;
+  background: #232222;
+  box-shadow: 2px 2px 2px green;
+}
+.container-tarjeta .tarjeta img {
+  width: 100%;
+  height: 300px;
+}
+.container-tarjeta .tarjeta p {
+  font-size: 20px;
+  text-align: center;
+  color: beige;
+  margin-top: 10px;
+}
+.container-tarjeta .tarjeta .btn-submit {
+  width: 30%;
+  background: #3d3a3a;
+  color: beige;
+  border-radius: 20px;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #000000;
+}
+.container-tarjeta .tarjeta .btn-submit:hover {
+  color: greenyellow;
+  background: #645c5c;
+}
+
+/*# sourceMappingURL=estilos.css.map */
